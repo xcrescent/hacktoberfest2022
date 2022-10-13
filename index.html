@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input:valid div.hiii{
+      background-color: green;
+    }
+    input:valid {
+      color: green;
+    }
+    input:invalid {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <form id="validationForm">
+    <input title="number" type="tel" name="phone" pattern="^(?=.[a-zA-Z\d@$!%?&])[A-Za-z\d@$!%?&]{1,}$">
+    <input type="submit" value="Submit">
+  </form>
+  <!-- <div class="hiii">
+    hello
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>
